@@ -1,0 +1,70 @@
+# .NET Desktop
+# Build and run tests for .NET Desktop or Windows classic desktop solutions.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
+
+trigger:
+- none
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/Arcante.Companies.sln'
+  project: '**/Moinsa.Arcante.Company.Client.csproj'
+  buildPlatform: Any CPU
+  buildConfiguration: Release
+
+steps:
+#Instalamos Nuget.exe 
+- task: NuGetToolInstaller@1
+  displayName: Install nuget.exe
+
+#Restauramos los nugets de la solucion
+- task: NuGetCommand@2
+  displayName: Restoring solution packages
+  inputs:
+    command: 'restore'
+    restoreSolution: '$(solution)'
+    feedsToUse: 'select'
+    vstsFeed: '2251a5db-6c8f-48ff-99a5-7810178819ab'
+
+#Compilamos la solucion
+- task: DotNetCoreCLI@2
+  displayName: Build Clients
+  inputs:
+    command: build
+    arguments: '-c=$(buildConfiguration)'
+    projects: '**/Moinsa.Arcante.Company.Client.csproj'
+    configuration: $(buildConfiguration)
+    platform: $(buildPlatform)
+
+#Creamos el nuget
+- task: DotNetCoreCLI@2
+  displayName: Packing nugets
+  inputs:
+    command: 'pack'
+    packagesToPack: '$(project)'
+    includesymbols: true
+    versioningScheme: off
+    configuration: $(buildConfiguration)
+    platform: $(buildPlatform)
+
+#publicamos el artefacto
+- task: NuGetCommand@2
+  displayName: Uploading nugets
+  inputs:
+    command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: '2251a5db-6c8f-48ff-99a5-7810178819ab'
+    configuration: $(buildConfiguration)
+    platform: $(buildPlatform)
+
+#publicamos los simbolos para poder depurar los nugets
+- task: PublishSymbols@2
+  displayName: Uploading symbols
+  inputs:
+    SearchPattern: '**/bin/**/*.pdb'
+    SymbolServerType: 'TeamServices'
+
