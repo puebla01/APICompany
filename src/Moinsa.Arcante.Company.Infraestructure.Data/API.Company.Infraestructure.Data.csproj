@@ -30,8 +30,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Moinsa.Arcante.Company.Infraestructure.Domain\Moinsa.Arcante.Company.Infraestructure.Domain.csproj" />
-    <ProjectReference Include="..\Moinsa.Arcante.Company.Models\Moinsa.Arcante.Company.Models.csproj" />
+    <ProjectReference Include="..\Moinsa.Arcante.Company.Infraestructure.Domain\API.Company.Infraestructure.Domain.csproj" />
+    <ProjectReference Include="..\Moinsa.Arcante.Company.Models\API.Company.Models.csproj" />
   </ItemGroup>
 
 </Project>

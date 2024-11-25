@@ -1,5 +1,5 @@
-using Moinsa.Arcante.Company.Host.Enums;
-using Moinsa.Arcante.Company.Infraestructure.Data;
+using API.Company.Host.Enums;
+using API.Company.Infraestructure.Data;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;

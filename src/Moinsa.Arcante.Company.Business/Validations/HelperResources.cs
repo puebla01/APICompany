@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Localization;
 
-namespace Moinsa.Arcante.Company.Business.Validations
+namespace API.Company.Business.Validations
 {
     public static class HelperResources
     {

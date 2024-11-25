@@ -1,13 +1,13 @@
-﻿using Moinsa.Arcante.Company.Domain.Entities;
+﻿using API.Company.Domain.Entities;
 using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Moinsa.Arcante.Company.Models.Process;
+using API.Company.Models.Process;
 
-namespace Moinsa.Arcante.Company.Infraestructure.Data.Mappings
+namespace API.Company.Infraestructure.Data.Mappings
 {
     public class ProcesosProfile:Profile
     {

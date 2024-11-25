@@ -31,7 +31,7 @@
 
   <ItemGroup>
     <!-- modified this ProjectReference to include the children ReferenceOutputAssembly and IncludeAssets -->
-    <ProjectReference Include="..\Moinsa.Arcante.Company.Models\Moinsa.Arcante.Company.Models.csproj">
+    <ProjectReference Include="..\Moinsa.Arcante.Company.Models\API.Company.Models.csproj">
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
       <IncludeAssets>Moinsa.Arcante.Company.Models.dll</IncludeAssets>
       <Private>True</Private>

@@ -1,4 +1,4 @@
-﻿namespace Moinsa.Arcante.Company.Host.Enums
+﻿namespace API.Company.Host.Enums
 {
     public class StatusCodesDescriptions
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Moinsa.Arcante.Company.Infraestructure.Data.Migrations
+namespace API.Company.Infraestructure.Data.Migrations
 {
     public partial class NuevosCamposOrgs : Migration
     {

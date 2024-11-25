@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moinsa.Arcante.Company.Infraestructure.Data", "Moinsa.Arcante.Company.Infraestructure.Data\Moinsa.Arcante.Company.Infraestructure.Data.csproj", "{3BBA9966-2858-4279-8B86-C910797DD617}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.Company.Infraestructure.Data", "Moinsa.Arcante.Company.Infraestructure.Data\API.Company.Infraestructure.Data.csproj", "{3BBA9966-2858-4279-8B86-C910797DD617}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moinsa.Arcante.Company.Host", "Moinsa.Arcante.Company.Host\Moinsa.Arcante.Company.Host.csproj", "{0CAFB76B-51C2-4067-8862-E07EF4D0591C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.Company.Host", "Moinsa.Arcante.Company.Host\API.Company.Host.csproj", "{0CAFB76B-51C2-4067-8862-E07EF4D0591C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moinsa.Arcante.Company.Infraestructure.Domain", "Moinsa.Arcante.Company.Infraestructure.Domain\Moinsa.Arcante.Company.Infraestructure.Domain.csproj", "{89D6B27F-C05C-4AB5-B0FA-A9BA6DD98F9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.Company.Infraestructure.Domain", "Moinsa.Arcante.Company.Infraestructure.Domain\API.Company.Infraestructure.Domain.csproj", "{89D6B27F-C05C-4AB5-B0FA-A9BA6DD98F9B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moinsa.Arcante.Company.Business", "Moinsa.Arcante.Company.Business\Moinsa.Arcante.Company.Business.csproj", "{45D036AD-5D1E-43FB-8EFD-D89E1CA47BD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.Company.Business", "Moinsa.Arcante.Company.Business\API.Company.Business.csproj", "{45D036AD-5D1E-43FB-8EFD-D89E1CA47BD9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moinsa.Arcante.Company.Client", "Moinsa.Arcante.Company.Client\Moinsa.Arcante.Company.Client.csproj", "{BB80CB6A-9A7D-432A-AE29-C7673AAD4D1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.Company.Client", "Moinsa.Arcante.Company.Client\API.Company.Client.csproj", "{BB80CB6A-9A7D-432A-AE29-C7673AAD4D1A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moinsa.Arcante.Company.Client.Test", "Moinsa.Arcante.Company.Client.Test\Moinsa.Arcante.Company.Client.Test.csproj", "{9C941062-89EC-4445-8834-8D40A26040B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.Company.Client.Test", "Moinsa.Arcante.Company.Client.Test\API.Company.Client.Test.csproj", "{9C941062-89EC-4445-8834-8D40A26040B0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{1745A0C8-AABF-4A6B-88F7-1C5851B0C84A}"
 EndProject
@@ -27,7 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moinsa.Arcante.Company.Models", "Moinsa.Arcante.Company.Models\Moinsa.Arcante.Company.Models.csproj", "{2E9268FA-2C4E-478F-9934-FB9A4F4698EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.Company.Models", "Moinsa.Arcante.Company.Models\API.Company.Models.csproj", "{2E9268FA-2C4E-478F-9934-FB9A4F4698EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

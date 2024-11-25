@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Moinsa.Arcante.Company.Infraestructure.Data.Migrations
+namespace API.Company.Infraestructure.Data.Migrations
 {
     public partial class Initial : Migration
     {

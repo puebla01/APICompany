@@ -1,9 +1,9 @@
 ﻿
-using Moinsa.Arcante.Company.Business.Validations;
-using Moinsa.Arcante.Company.Host;
-using Moinsa.Arcante.Company.Host.Enums;
-using Moinsa.Arcante.Company.Host.Filters;
-using Moinsa.Arcante.Company.Host.Resources;
+using API.Company.Business.Validations;
+using API.Company.Host;
+using API.Company.Host.Enums;
+using API.Company.Host.Filters;
+using API.Company.Host.Resources;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
@@ -12,9 +12,9 @@ using Swashbuckle.AspNetCore.Annotations;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Moinsa.Arcante.Company.Models;
+using API.Company.Models;
 
-namespace Api.Company.Controllers
+namespace API.Company.Controllers
 {
     /// <summary>
     /// Enpoints relacionados con el Token

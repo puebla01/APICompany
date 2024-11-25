@@ -6,7 +6,7 @@ using System;
 using System.IO;
 using System.Security.Cryptography;
 
-namespace Moinsa.Arcante.Company.Client
+namespace API.Company.Client
 {
     public partial class Client
     {

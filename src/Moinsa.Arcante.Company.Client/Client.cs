@@ -4,11 +4,11 @@
 // </auto-generated>
 //----------------------
 
-using Moinsa.Arcante.Company.Models;
-using Moinsa.Arcante.Company.Models.Process;
-using Moinsa.Arcante.Company.Models.Companies;
+using API.Company.Models;
+using API.Company.Models.Process;
+using API.Company.Models.Companies;
 using Microsoft.Extensions.Configuration;
-using Moinsa.Arcante.Company.Models.Applications;
+using API.Company.Models.Applications;
 using Microsoft.AspNetCore.Mvc;
 
 #pragma warning disable 108 // Disable "CS0108 '{derivedDto}.ToJson()' hides inherited member '{dtoBase}.ToJson()'. Use the new keyword if hiding was intended."
@@ -23,7 +23,7 @@ using Microsoft.AspNetCore.Mvc;
 #pragma warning disable 8604 // Disable "CS8604 Possible null reference argument for parameter"
 #pragma warning disable 8625 // Disable "CS8625 Cannot convert null literal to non-nullable reference type"
 
-namespace Moinsa.Arcante.Company.Client
+namespace API.Company.Client
 {
     using System = global::System;
 

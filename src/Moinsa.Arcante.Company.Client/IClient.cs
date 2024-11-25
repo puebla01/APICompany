@@ -5,11 +5,11 @@
 //----------------------
 
 using Microsoft.AspNetCore.Mvc;
-using Moinsa.Arcante.Company.Models;
-using Moinsa.Arcante.Company.Models.Process;
-using Moinsa.Arcante.Company.Models.Companies;
+using API.Company.Models;
+using API.Company.Models.Process;
+using API.Company.Models.Companies;
 using Microsoft.Extensions.Configuration;
-using Moinsa.Arcante.Company.Models.Applications;
+using API.Company.Models.Applications;
 
 #pragma warning disable 108 // Disable "CS0108 '{derivedDto}.ToJson()' hides inherited member '{dtoBase}.ToJson()'. Use the new keyword if hiding was intended."
 #pragma warning disable 114 // Disable "CS0114 '{derivedDto}.RaisePropertyChanged(String)' hides inherited member 'dtoBase.RaisePropertyChanged(String)'. To make the current member override that implementation, add the override keyword. Otherwise add the new keyword."

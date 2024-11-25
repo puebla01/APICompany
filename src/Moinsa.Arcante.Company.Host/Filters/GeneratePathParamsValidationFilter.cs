@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Moinsa.Arcante.Company.Host.Filters
+namespace API.Company.Host.Filters
 {
     /// <summary>
     /// Path Parameter Validation Rules Filter

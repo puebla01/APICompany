@@ -1,18 +1,18 @@
-﻿using Api.Company.Controllers;
+﻿using API.Company.Controllers;
 using AutoMapper;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
-using Moinsa.Arcante.Company.Business.Repositories.Interfaces;
-using Moinsa.Arcante.Company.Domain.Entities;
-using Moinsa.Arcante.Company.Domain.Enums;
-using Moinsa.Arcante.Company.Host.Resources;
-using Moinsa.Arcante.Company.Models.Applications;
+using API.Company.Business.Repositories.Interfaces;
+using API.Company.Domain.Entities;
+using API.Company.Domain.Enums;
+using API.Company.Host.Resources;
+using API.Company.Models.Applications;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.Diagnostics;
 
-namespace Moinsa.Arcante.Company.Host.Controllers
+namespace API.Company.Host.Controllers
 {
     /// <summary>
     /// Endpoints relacionados con las Aplicaciones

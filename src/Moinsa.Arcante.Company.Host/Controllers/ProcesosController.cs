@@ -1,13 +1,13 @@
-﻿using Moinsa.Arcante.Company.Business.Repositories.Interfaces;
-using Api.Company.Controllers;
-using Moinsa.Arcante.Company.Host.Resources;
+﻿using API.Company.Business.Repositories.Interfaces;
+using API.Company.Controllers;
+using API.Company.Host.Resources;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 using Swashbuckle.AspNetCore.Annotations;
-using Moinsa.Arcante.Company.Models.Process;
+using API.Company.Models.Process;
 
-namespace Moinsa.Arcante.Company.Host.Controllers
+namespace API.Company.Host.Controllers
 {
     /// <summary>
     /// Endpoints relacionados con los Procesos de las organizaicones

@@ -1,9 +1,9 @@
 ﻿
 
-using Moinsa.Arcante.Company.Host.Security;
+using API.Company.Host.Security;
 using System.Security.Cryptography;
 
-namespace Moinsa.Arcante.Company.Host
+namespace API.Company.Host
 {
     public static class ConfigApp
     {

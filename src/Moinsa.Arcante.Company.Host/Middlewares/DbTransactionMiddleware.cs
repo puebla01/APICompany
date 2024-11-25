@@ -1,9 +1,9 @@
-﻿using Moinsa.Arcante.Company.Host.Attributes;
-using Moinsa.Arcante.Company.Infraestructure.Data;
+﻿using API.Company.Host.Attributes;
+using API.Company.Infraestructure.Data;
 using Microsoft.AspNetCore.Http.Features;
 using Serilog;
 
-namespace Moinsa.Arcante.Company.Host.Middlewares
+namespace API.Company.Host.Middlewares
 {
     public class DbTransactionMiddleware
     {

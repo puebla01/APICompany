@@ -1,9 +1,9 @@
-﻿using Moinsa.Arcante.Company.Business.Validations;
-using Moinsa.Arcante.Company.Infraestructure.Data;
+﻿using API.Company.Business.Validations;
+using API.Company.Infraestructure.Data;
 using AutoMapper;
 using Microsoft.Extensions.Logging;
 
-namespace Moinsa.Arcante.Company.Business.Repositories
+namespace API.Company.Business.Repositories
 {
     public abstract class BaseRepository
     {

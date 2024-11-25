@@ -1,4 +1,4 @@
-﻿namespace Moinsa.Arcante.Company.Models.Companies
+﻿namespace API.Company.Models.Companies
 {
     public class OrganizationsUpdateRequestModel
     {

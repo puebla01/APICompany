@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration.Json;
 
-namespace Moinsa.Arcante.Company.Host.Security
+namespace API.Company.Host.Security
 {
     public class WritableJsonConfigurationSource : JsonConfigurationSource
     {

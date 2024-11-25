@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Moinsa.Arcante.Company.Models.Applications
+namespace API.Company.Models.Applications
 {
     public class ApplicationsRequestModels
     {

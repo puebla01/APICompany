@@ -1,22 +1,22 @@
-﻿using Api.Company.Controllers;
-using Moinsa.Arcante.Company.Business.Repositories.Interfaces;
-using Moinsa.Arcante.Company.Host.Resources;
+﻿using API.Company.Controllers;
+using API.Company.Business.Repositories.Interfaces;
+using API.Company.Host.Resources;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 using Swashbuckle.AspNetCore.Annotations;
-using Moinsa.Arcante.Company.Business.Validations;
+using API.Company.Business.Validations;
 using System.Diagnostics;
 using Serilog;
-using Moinsa.Arcante.Company.Domain.Enums;
-using Moinsa.Arcante.Company.Infraestructure.Data;
-using Moinsa.Arcante.Company.Domain.Entities;
+using API.Company.Domain.Enums;
+using API.Company.Infraestructure.Data;
+using API.Company.Domain.Entities;
 using System.Diagnostics.Metrics;
-using Moinsa.Arcante.Company.Models.Companies;
+using API.Company.Models.Companies;
 using System.Collections.Immutable;
-using Moinsa.Arcante.Company.Business;
+using API.Company.Business;
 
-namespace Moinsa.Arcante.Company.Host.Controllers
+namespace API.Company.Host.Controllers
 {
     /// <summary>
     /// Endpoints relacionados Organizaciones

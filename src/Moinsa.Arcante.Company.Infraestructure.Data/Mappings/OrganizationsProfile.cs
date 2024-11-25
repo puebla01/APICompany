@@ -1,9 +1,9 @@
-﻿using Moinsa.Arcante.Company.Domain.Entities;
+﻿using API.Company.Domain.Entities;
 using AutoMapper;
-using Moinsa.Arcante.Company.Models.Companies;
+using API.Company.Models.Companies;
 
 
-namespace Moinsa.Arcante.Company.Infraestructure.Data.Mappings
+namespace API.Company.Infraestructure.Data.Mappings
 {
     public class OrganizationsProfile:Profile
     {

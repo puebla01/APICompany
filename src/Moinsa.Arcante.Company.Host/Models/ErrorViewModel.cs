@@ -1,4 +1,4 @@
-namespace Moinsa.Arcante.Company.Host.Models
+namespace API.Company.Host.Models
 {
     public class ErrorViewModel
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Moinsa.Arcante.Company.Models.Process
+namespace API.Company.Models.Process
 {
     public class ProcesosResponseModel
     {

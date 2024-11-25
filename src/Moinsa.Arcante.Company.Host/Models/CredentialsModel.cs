@@ -1,6 +1,6 @@
 ﻿//using Newtonsoft.Json;
 
-//namespace Moinsa.Arcante.Company.Host.Models
+//namespace API.Company.Host.Models
 //{
 //    /// <summary>
 //    /// Objecto para indicar las credenciales de acceso

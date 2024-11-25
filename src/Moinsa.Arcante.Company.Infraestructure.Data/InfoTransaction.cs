@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Moinsa.Arcante.Company.Infraestructure.Data
+namespace API.Company.Infraestructure.Data
 {
     public class InfoTransaction
     {

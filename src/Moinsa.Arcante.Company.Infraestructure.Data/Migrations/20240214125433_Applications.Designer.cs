@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Moinsa.Arcante.Company.Infraestructure.Data;
+using API.Company.Infraestructure.Data;
 
-namespace Moinsa.Arcante.Company.Infraestructure.Data.Migrations
+namespace API.Company.Infraestructure.Data.Migrations
 {
     [DbContext(typeof(ApiCompanyDbContext))]
     [Migration("20240214125433_Applications")]
@@ -21,7 +21,7 @@ namespace Moinsa.Arcante.Company.Infraestructure.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Moinsa.Arcante.Company.Domain.Entities.Applications", b =>
+            modelBuilder.Entity("API.Company.Domain.Entities.Applications", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -49,7 +49,7 @@ namespace Moinsa.Arcante.Company.Infraestructure.Data.Migrations
                     b.ToTable("Applications");
                 });
 
-            modelBuilder.Entity("Moinsa.Arcante.Company.Domain.Entities.Organizations", b =>
+            modelBuilder.Entity("API.Company.Domain.Entities.Organizations", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -101,7 +101,7 @@ namespace Moinsa.Arcante.Company.Infraestructure.Data.Migrations
                     b.ToTable("Organizations");
                 });
 
-            modelBuilder.Entity("Moinsa.Arcante.Company.Domain.Entities.Procesos", b =>
+            modelBuilder.Entity("API.Company.Domain.Entities.Procesos", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -127,18 +127,18 @@ namespace Moinsa.Arcante.Company.Infraestructure.Data.Migrations
                     b.ToTable("Procesos");
                 });
 
-            modelBuilder.Entity("Moinsa.Arcante.Company.Domain.Entities.Organizations", b =>
+            modelBuilder.Entity("API.Company.Domain.Entities.Organizations", b =>
                 {
-                    b.HasOne("Moinsa.Arcante.Company.Domain.Entities.Applications", "IdApplicationNavigation")
+                    b.HasOne("API.Company.Domain.Entities.Applications", "IdApplicationNavigation")
                         .WithMany("Organizations")
                         .HasForeignKey("IdApplication")
                         .HasConstraintName("FK_Organizations_Applications")
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Moinsa.Arcante.Company.Domain.Entities.Procesos", b =>
+            modelBuilder.Entity("API.Company.Domain.Entities.Procesos", b =>
                 {
-                    b.HasOne("Moinsa.Arcante.Company.Domain.Entities.Organizations", "IdOrganizacionNavigation")
+                    b.HasOne("API.Company.Domain.Entities.Organizations", "IdOrganizacionNavigation")
                         .WithMany("Procesos")
                         .HasForeignKey("IdOrganizacion")
                         .HasConstraintName("FK_Procesos_Organizations")

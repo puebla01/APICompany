@@ -1,4 +1,4 @@
-﻿using Moinsa.Arcante.Company.Domain.Entities;
+﻿using API.Company.Domain.Entities;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
@@ -10,7 +10,7 @@ using System.Security;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Moinsa.Arcante.Company.Infraestructure.Data
+namespace API.Company.Infraestructure.Data
 {
     public partial class ApiCompanyDbContext : BaseDbContext
     {
@@ -170,7 +170,7 @@ namespace Moinsa.Arcante.Company.Infraestructure.Data
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 //optionsBuilder.UseSqlServer("Data Source=172.26.19.9\\SQL2017;Initial Catalog=ARCANTE_API;Persist Security Info=True;User ID=sa;Password=Nirvana49;trustservercertificate=true");
-                optionsBuilder.UseSqlServer("Data Source=MX4000012DC0122\\SQLEXPRESS;Initial Catalog=ARCANTE_API_Org;Persist Security Info=True;User ID=sa;Password=Moinsa;MultipleActiveResultSets=True;trustservercertificate=true");
+                optionsBuilder.UseSqlServer("Data Source=localhost\\MSSQLEXPRESS;Initial Catalog=Company;Persist Security Info=True;User ID=sa;Password=001001;MultipleActiveResultSets=True;trustservercertificate=true");
                 _key = "This value must be replaced in config file";
             }
 

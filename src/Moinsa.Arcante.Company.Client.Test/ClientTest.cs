@@ -2,9 +2,9 @@
 using FluentAssertions.Equivalency;
 using IdentityModel.Client;
 using Microsoft.AspNetCore.Mvc;
-using Moinsa.Arcante.Company.Models;
-using Moinsa.Arcante.Company.Models.Applications;
-using Moinsa.Arcante.Company.Models.Companies;
+using API.Company.Models;
+using API.Company.Models.Applications;
+using API.Company.Models.Companies;
 using Newtonsoft.Json.Linq;
 using System.Configuration;
 using System.IdentityModel.Tokens.Jwt;
@@ -13,7 +13,7 @@ using System.Security.Policy;
 using Xunit.Priority;
 
 
-namespace Moinsa.Arcante.Company.Client.Test
+namespace API.Company.Client.Test
 {
     public class ClientTest
     {

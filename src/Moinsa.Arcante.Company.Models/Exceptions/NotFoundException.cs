@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
 
-namespace Moinsa.Arcante.Company.Models.Exceptions
+namespace API.Company.Models.Exceptions
 {
     public class NotFoundException : CustomException
     {

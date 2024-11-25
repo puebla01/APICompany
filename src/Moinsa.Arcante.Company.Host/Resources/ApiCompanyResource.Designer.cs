@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Moinsa.Arcante.Company.Host.Resources {
+namespace API.Company.Host.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Moinsa.Arcante.Company.Host.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Moinsa.Arcante.Company.Host.Resources.ApiCompanyResource", typeof(ApiCompanyResource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("API.Company.Host.Resources.ApiCompanyResource", typeof(ApiCompanyResource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

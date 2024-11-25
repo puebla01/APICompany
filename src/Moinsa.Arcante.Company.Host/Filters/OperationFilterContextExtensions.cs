@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.Filters;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Moinsa.Arcante.Company.Host.Filters
+namespace API.Company.Host.Filters
 {
     public static class OperationFilterContextExtensions
     {

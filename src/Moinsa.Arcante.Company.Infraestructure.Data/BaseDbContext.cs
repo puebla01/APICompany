@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Reflection;
 
-namespace Moinsa.Arcante.Company.Infraestructure.Data
+namespace API.Company.Infraestructure.Data
 {
     public abstract class BaseDbContext : DbContext
     {

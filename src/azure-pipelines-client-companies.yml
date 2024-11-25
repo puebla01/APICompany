@@ -11,7 +11,7 @@ pool:
 
 variables:
   solution: '**/Arcante.Companies.sln'
-  project: '**/Moinsa.Arcante.Company.Client.csproj'
+  project: '**/API.Company.Client.csproj'
   buildPlatform: Any CPU
   buildConfiguration: Release
 
@@ -35,7 +35,7 @@ steps:
   inputs:
     command: build
     arguments: '-c=$(buildConfiguration)'
-    projects: '**/Moinsa.Arcante.Company.Client.csproj'
+    projects: '**/API.Company.Client.csproj'
     configuration: $(buildConfiguration)
     platform: $(buildPlatform)
 

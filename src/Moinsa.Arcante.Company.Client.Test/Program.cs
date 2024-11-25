@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Moinsa.Arcante.Company.Client;
-using Moinsa.Arcante.Company.Models;
+using API.Company.Client;
+using API.Company.Models;
 
 namespace ConsoleClientTest
 {
@@ -20,7 +20,7 @@ namespace ConsoleClientTest
             var _configuration = builder.Build();
 
 
-            Console.WriteLine("Moinsa.Arcante.Company.Client");
+            Console.WriteLine("API.Company.Client");
             Console.WriteLine("=====================================================\r\n");
 
             Client client = new Client(_configuration);
@@ -50,7 +50,7 @@ namespace ConsoleClientTest
             Console.WriteLine("How to add a APPLICATION...");
             try
             {
-                var dataCreation = client.AplicacionesPostAsync("", new Moinsa.Arcante.Company.Models.Applications.ApplicationsRequestModels()
+                var dataCreation = client.AplicacionesPostAsync("", new API.Company.Models.Applications.ApplicationsRequestModels()
                 {
                     Name = nombreAplicacion,
                     SourceUpdate = 0
@@ -78,7 +78,7 @@ namespace ConsoleClientTest
             Console.WriteLine("How to add a company...");
             try
             {
-                var dataCreation = client.OrganizacionesPostAsync("", new Moinsa.Arcante.Company.Models.Companies.OrganizationsRequestModel()
+                var dataCreation = client.OrganizacionesPostAsync("", new API.Company.Models.Companies.OrganizationsRequestModel()
                 {
                     CadenaConexion = connectionString,
                     Nombre = nombreEmpresa,

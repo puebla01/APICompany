@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Moinsa.Arcante.Company.Business
+namespace API.Company.Business
 {
     public static class Utils
     {

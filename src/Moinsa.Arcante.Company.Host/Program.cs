@@ -1,9 +1,9 @@
-using Moinsa.Arcante.Company.Business.Repositories;
-using Moinsa.Arcante.Company.Host;
-using Moinsa.Arcante.Company.Host.Controllers;
-using Moinsa.Arcante.Company.Host.Filters;
-using Moinsa.Arcante.Company.Host.Middlewares;
-using Moinsa.Arcante.Company.Infraestructure.Data;
+using API.Company.Business.Repositories;
+using API.Company.Host;
+using API.Company.Host.Controllers;
+using API.Company.Host.Filters;
+using API.Company.Host.Middlewares;
+using API.Company.Infraestructure.Data;
 using CliWrap;
 using IO.Swagger.Filters;
 using IO.Swagger.Security;
@@ -34,7 +34,7 @@ builder.Host.UseSerilog((context, configuration) =>
     .ReadFrom.Configuration(context.Configuration);
 });
 
-Log.Information($"Starting {nameof(Api)}");
+Log.Information($"Starting {nameof(API)}");
 
 if (!MustBeStarted().Result)
 {
@@ -242,9 +242,9 @@ builder.Services.AddSwaggerGen(c =>
         Description = "Arcante Interfaces - OpenAPI 3.1 (ASP.NET Core 3.1) V1",
         Contact = new OpenApiContact()
         {
-            Email = "soft.rf@moinsa.es",
-            Name = "Moinsa",
-            Url = new Uri("http://www.moinsa.es")
+            Email = "soft.rf@.es",
+            Name = "API",
+            Url = new Uri("http://www.puebla.es")
         }
     });
     c.UseInlineDefinitionsForEnums();
@@ -465,14 +465,14 @@ static async Task<bool> MustBeStarted()
 
     if (args.Length >= 1)
     {
-        string executablePath = $"{doubleQuote}{Path.Combine(AppContext.BaseDirectory, "Moinsa.Arcante.Company.Host.exe")}{doubleQuote} service";
+        string executablePath = $"{doubleQuote}{Path.Combine(AppContext.BaseDirectory, "API.Company.Host.exe")}{doubleQuote} service";
 
         if (args.Contains("/Install"))
         {
 
             string binPath = @$"binPath={executablePath}";
 
-            Log.Information("Installing Moinsa.Moinsa.Arcante.Company.Host.Host");
+            Log.Information("Installing API.Company.Host.Host");
             await Cli.Wrap("sc")
                 .WithArguments(new[] { "create", $"{ServiceName}", binPath, "start=delayed-auto" })
                 .ExecuteAsync();
@@ -490,7 +490,7 @@ static async Task<bool> MustBeStarted()
         }
         else if (args.Contains("/Uninstall"))
         {
-            Log.Information("Uninstalling Moinsa.Moinsa.Arcante.Company.Host.Host");
+            Log.Information("Uninstalling API.Company.Host.Host");
 
             await Cli.Wrap("sc")
                 .WithArguments(new[] { "stop", ServiceName })

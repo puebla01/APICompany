@@ -1,6 +1,6 @@
-using Moinsa.Arcante.Company.Host.Attributes;
-using Moinsa.Arcante.Company.Host.Enums;
-using Moinsa.Arcante.Company.Host.Filters;
+using API.Company.Host.Attributes;
+using API.Company.Host.Enums;
+using API.Company.Host.Filters;
 using IO.Swagger.Attributes;
 using IO.Swagger.Security;
 using Microsoft.AspNetCore.Authorization;
@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace Api.Company.Controllers
+namespace API.Company.Controllers
 {
     /// <summary>
     /// Controlador base para añadir atributos comunes a todos los Controladores

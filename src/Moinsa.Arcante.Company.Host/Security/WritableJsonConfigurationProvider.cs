@@ -2,7 +2,7 @@
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 
-namespace Moinsa.Arcante.Company.Host.Security
+namespace API.Company.Host.Security
 {
     public class WritableJsonConfigurationProvider : JsonConfigurationProvider
     {

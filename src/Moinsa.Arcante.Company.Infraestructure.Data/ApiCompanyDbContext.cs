@@ -1,11 +1,11 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Moinsa.Arcante.Company.Domain.Entities;
-using Moinsa.Arcante.Company.Infraestructure.Data.Configurations;
+using API.Company.Domain.Entities;
+using API.Company.Infraestructure.Data.Configurations;
 using System;
 using System.Collections.Generic;
-namespace Moinsa.Arcante.Company.Infraestructure.Data
+namespace API.Company.Infraestructure.Data
 {
     public partial class ApiCompanyDbContext 
     {

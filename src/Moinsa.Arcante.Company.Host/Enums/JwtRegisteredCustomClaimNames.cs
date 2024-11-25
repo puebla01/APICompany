@@ -1,7 +1,7 @@
-﻿namespace Moinsa.Arcante.Company.Host.Enums
+﻿namespace API.Company.Host.Enums
 {
     /// <summary>
-    /// List of registered custom claims for Moinsa Arcante Voice Server API
+    /// List of registered custom claims for Server API
     /// </summary>
     public struct JwtRegisteredCustomClaimNames
     {

@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Moinsa.Arcante.Company.Business.Repositories.Interfaces;
-using Moinsa.Arcante.Company.Business.Validations;
-using Moinsa.Arcante.Company.Domain.Entities;
-using Moinsa.Arcante.Company.Domain.Enums;
-using Moinsa.Arcante.Company.Infraestructure.Data;
-using Moinsa.Arcante.Company.Models.Exceptions;
+using API.Company.Business.Repositories.Interfaces;
+using API.Company.Business.Validations;
+using API.Company.Domain.Entities;
+using API.Company.Domain.Enums;
+using API.Company.Infraestructure.Data;
+using API.Company.Models.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -15,7 +15,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Moinsa.Arcante.Company.Business.Repositories
+namespace API.Company.Business.Repositories
 {
     public class ApplicationsRepository : BaseRepository, IApplicationsRepository
     {

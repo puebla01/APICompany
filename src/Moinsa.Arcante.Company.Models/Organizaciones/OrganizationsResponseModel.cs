@@ -1,6 +1,6 @@
 ﻿
 using System;
-namespace Moinsa.Arcante.Company.Models.Companies
+namespace API.Company.Models.Companies
 {
     public partial class OrganizationsResponseModel : OrganizationsRequestModel
     {

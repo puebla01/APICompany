@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Moinsa.Arcante.Company.Host.Middlewares
+namespace API.Company.Host.Middlewares
 {
     public static class MiddlewareExtensions
     {

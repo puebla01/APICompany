@@ -1,5 +1,5 @@
 # Introduction 
-Moinsa.Arcante.Company.Client es una libreria que agrupa los clientes http necesarios para llamar al API Rest Moinsa.Arcante.Company.Client.Host
+API.Company.Client es una libreria que agrupa los clientes http necesarios para llamar al API Rest API.Company.Client.Host
 
 # How to Use
 La librería puede ser instanciado pasándole un IConfiguration, o bien, con los parámetros requeridos.
@@ -20,9 +20,9 @@ realizan cambios se guarden automáticamente. La sección de configuración del arc
 ```C#
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Moinsa.Arcante.Company.Client;
-using Moinsa.Arcante.Company.Client.Test;
-using Moinsa.Arcante.Company.Models;
+using API.Company.Client;
+using API.Company.Client.Test;
+using API.Company.Models;
 
 namespace ConsoleClientTest
 {
@@ -41,7 +41,7 @@ namespace ConsoleClientTest
             var _configuration = builder.Build();
 
 
-            Console.WriteLine("Moinsa.Arcante.Company.Client");
+            Console.WriteLine("API.Company.Client");
             Console.WriteLine("=====================================================\r\n");
 
             string url = "https://localhost:17117";
@@ -73,7 +73,7 @@ namespace ConsoleClientTest
             Console.WriteLine("How to add a APPLICATION...");
             try
             {
-                var dataCreation = client.AplicacionesPostAsync("", new Moinsa.Arcante.Company.Models.Applications.ApplicationsRequestModels()
+                var dataCreation = client.AplicacionesPostAsync("", new API.Company.Models.Applications.ApplicationsRequestModels()
                 {
                     Name = nombreAplicacion,
                     SourceUpdate = 0
@@ -101,7 +101,7 @@ namespace ConsoleClientTest
             Console.WriteLine("How to add a company...");
             try
             {
-                var dataCreation = client.OrganizacionesPostAsync("", new Moinsa.Arcante.Company.Models.Companies.OrganizationsRequestModel()
+                var dataCreation = client.OrganizacionesPostAsync("", new API.Company.Models.Companies.OrganizationsRequestModel()
                 {
                     CadenaConexion = connectionString,
                     Nombre = nombreEmpresa,

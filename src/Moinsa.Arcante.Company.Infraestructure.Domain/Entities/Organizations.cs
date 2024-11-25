@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Moinsa.Arcante.Company.Domain.Entities
+namespace API.Company.Domain.Entities
 {
     public partial class Organizations
     {

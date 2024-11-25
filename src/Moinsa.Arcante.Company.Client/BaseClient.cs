@@ -1,4 +1,4 @@
-﻿using Moinsa.Arcante.Company.Client;
+﻿using API.Company.Client;
 using IdentityModel.Client;
 using System.Net.Http;
 using System.Threading;
@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 
-namespace Moinsa.Arcante.Company.Client
+namespace API.Company.Client
 {
     public abstract class BaseClient
     {

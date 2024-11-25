@@ -2,12 +2,12 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Moinsa.Arcante.Company.Domain.Entities;
-using Moinsa.Arcante.Company.Infraestructure.Data;
+using API.Company.Domain.Entities;
+using API.Company.Infraestructure.Data;
 using System;
 using System.Collections.Generic;
 
-namespace Moinsa.Arcante.Company.Infraestructure.Data.Configurations
+namespace API.Company.Infraestructure.Data.Configurations
 {
     public partial class ProcesosConfiguration : IEntityTypeConfiguration<Procesos>
     {

@@ -1,5 +1,5 @@
-﻿using Moinsa.Arcante.Company.Business;
-using Moinsa.Arcante.Company.Business.Repositories;
+﻿using API.Company.Business;
+using API.Company.Business.Repositories;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using System.Reflection;
 

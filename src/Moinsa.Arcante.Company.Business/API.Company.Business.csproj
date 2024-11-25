@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Moinsa.Arcante.Company.Infraestructure.Data\Moinsa.Arcante.Company.Infraestructure.Data.csproj" />
+    <ProjectReference Include="..\Moinsa.Arcante.Company.Infraestructure.Data\API.Company.Infraestructure.Data.csproj" />
   </ItemGroup>
 
 </Project>

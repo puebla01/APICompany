@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Reflection;
 
-namespace Moinsa.Arcante.Company.Host
+namespace API.Company.Host
 {
     public static class Utils
     {

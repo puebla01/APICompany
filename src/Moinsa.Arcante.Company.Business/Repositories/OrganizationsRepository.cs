@@ -1,8 +1,8 @@
-﻿using Moinsa.Arcante.Company.Business.Repositories.Interfaces;
-using Moinsa.Arcante.Company.Business.Validations;
-using Moinsa.Arcante.Company.Domain.Entities;
-using Moinsa.Arcante.Company.Domain.Enums;
-using Moinsa.Arcante.Company.Infraestructure.Data;
+﻿using API.Company.Business.Repositories.Interfaces;
+using API.Company.Business.Validations;
+using API.Company.Domain.Entities;
+using API.Company.Domain.Enums;
+using API.Company.Infraestructure.Data;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -10,11 +10,11 @@ using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 using System.Text;
 using System.Xml;
-using static Moinsa.Arcante.Company.Domain.Enums.EnumList;
-using Moinsa.Arcante.Company.Models.Exceptions;
-using Moinsa.Arcante.Company.Models.Companies;
+using static API.Company.Domain.Enums.EnumList;
+using API.Company.Models.Exceptions;
+using API.Company.Models.Companies;
 
-namespace Moinsa.Arcante.Company.Business.Repositories
+namespace API.Company.Business.Repositories
 {
     public class OrganizationsRepository : BaseRepository, IOrganizationsRepository
     {
@@ -243,8 +243,8 @@ namespace Moinsa.Arcante.Company.Business.Repositories
             
                 await _procesosRepository.AddOrUpdateProceso(con, org.Id, (int)estadosProcesosEnum.EnProgreso, errs.ToString());
                 //UpdateEstadoOrganizacionIdAsync(org.Id, "En Uso", version, org.Entorno, con);
-                var rutaLog = $"./Logs/MoinsaArcanteOrganizaciones_API_DACPAC_{org.Nombre}-.Log";
-                string args = $"/Action:Publish /Profile:{rutaDacPac+profile} /SourceFile:{rutaDacPac}Moinsa.Arcante.Db.dacpac /TargetConnectionString:\"{org.CadenaConexion}\" /Diagnostics:true /DiagnosticsFile:{rutaLog}";
+                var rutaLog = $"./Logs/APIOrganizaciones_API_DACPAC_{org.Nombre}-.Log";
+                string args = $"/Action:Publish /Profile:{rutaDacPac+profile} /SourceFile:{rutaDacPac}API.Db.dacpac /TargetConnectionString:\"{org.CadenaConexion}\" /Diagnostics:true /DiagnosticsFile:{rutaLog}";
                 bool hayError = false;
                 ProcessStartInfo startInfo = new ProcessStartInfo()
                 {
@@ -314,17 +314,17 @@ namespace Moinsa.Arcante.Company.Business.Repositories
                 switch (organization.Entorno)
                 {
                     case "DEV":
-                        profile = "00-DEV-Moinsa.Arcante.Db.publish.xml";
+                        profile = "00-DEV-API.Db.publish.xml";
                         break;
                     case "QA":
-                        profile = "01-QA-Moinsa.Arcante.Db.publish.xml";
+                        profile = "01-QA-API.Db.publish.xml";
                         break;
                     case "PRO":
-                        profile = "02-PRO-Moinsa.Arcante.Db.publish.xml";
+                        profile = "02-PRO-API.Db.publish.xml";
                         break;
 
                     default:
-                        profile = "00-DEV-Moinsa.Arcante.Db.publish.xml";
+                        profile = "00-DEV-API.Db.publish.xml";
                         organization.Entorno = "DEV";
                         break;
                 }

@@ -5,7 +5,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Moinsa.Arcante.Company.Client.Test
+namespace API.Company.Client.Test
 {
     public class Settings
     {

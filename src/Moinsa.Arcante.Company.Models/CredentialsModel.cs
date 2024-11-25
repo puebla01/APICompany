@@ -1,5 +1,5 @@
 ﻿
-namespace Moinsa.Arcante.Company.Models
+namespace API.Company.Models
 {
     /// <summary>
     /// Objecto para indicar las credenciales de acceso

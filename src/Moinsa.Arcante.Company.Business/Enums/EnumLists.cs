@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 using System.Xml.Linq;
 
-namespace Moinsa.Arcante.Company.Domain.Enums
+namespace API.Company.Domain.Enums
 {
 
     public class EnumList

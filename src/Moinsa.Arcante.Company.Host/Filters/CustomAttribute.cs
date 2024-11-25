@@ -1,4 +1,4 @@
-﻿namespace Moinsa.Arcante.Company.Host.Filters
+﻿namespace API.Company.Host.Filters
 {
     public class CustomAttribute
     {

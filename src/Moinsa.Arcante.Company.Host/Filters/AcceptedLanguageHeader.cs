@@ -1,7 +1,7 @@
 ﻿using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Moinsa.Arcante.Company.Host.Filters
+namespace API.Company.Host.Filters
 {
     [AttributeUsage(validOn:AttributeTargets.Class | AttributeTargets.Method)]
     public class AcceptedLanguageHeader : Attribute, IOperationFilter, ICustomAttribute

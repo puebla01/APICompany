@@ -1,7 +1,7 @@
-﻿using Moinsa.Arcante.Company.Domain.Entities;
-using Moinsa.Arcante.Company.Models.Companies;
+﻿using API.Company.Domain.Entities;
+using API.Company.Models.Companies;
 
-namespace Moinsa.Arcante.Company.Business.Repositories.Interfaces
+namespace API.Company.Business.Repositories.Interfaces
 {
     public interface IOrganizationsRepository
     {

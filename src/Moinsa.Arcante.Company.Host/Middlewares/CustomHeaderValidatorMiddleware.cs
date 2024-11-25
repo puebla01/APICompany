@@ -1,7 +1,7 @@
 ﻿
-using Moinsa.Arcante.Company.Host.Filters;
+using API.Company.Host.Filters;
 
-namespace Moinsa.Arcante.Company.Host.Middlewares
+namespace API.Company.Host.Middlewares
 {
     public class CustomHeaderValidatorMiddleware
     {

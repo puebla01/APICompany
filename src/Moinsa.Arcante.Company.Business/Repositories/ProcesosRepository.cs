@@ -1,8 +1,8 @@
-﻿using Moinsa.Arcante.Company.Business.Repositories.Interfaces;
-using Moinsa.Arcante.Company.Business.Validations;
-using Moinsa.Arcante.Company.Domain.Entities;
-using Moinsa.Arcante.Company.Domain.Enums;
-using Moinsa.Arcante.Company.Infraestructure.Data;
+﻿using API.Company.Business.Repositories.Interfaces;
+using API.Company.Business.Validations;
+using API.Company.Domain.Entities;
+using API.Company.Domain.Enums;
+using API.Company.Infraestructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,10 +12,10 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using static Moinsa.Arcante.Company.Domain.Enums.EnumList;
-using Moinsa.Arcante.Company.Models.Process;
+using static API.Company.Domain.Enums.EnumList;
+using API.Company.Models.Process;
 
-namespace Moinsa.Arcante.Company.Business.Repositories
+namespace API.Company.Business.Repositories
 {
     public class ProcesosRepository:BaseRepository, IProcesosRepository
     {
