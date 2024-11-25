@@ -9,7 +9,6 @@ using API.Company.Business.Validations;
 using System.Diagnostics;
 using Serilog;
 using API.Company.Domain.Enums;
-using API.Company.Infraestructure.Data;
 using API.Company.Domain.Entities;
 using System.Diagnostics.Metrics;
 using API.Company.Models.Companies;

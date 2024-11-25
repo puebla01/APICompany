@@ -16,7 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Moinsa.Arcante.Company.Infraestructure.Data\API.Company.Infraestructure.Data.csproj" />
+    <ProjectReference Include="..\API.Company.Infraestructure.Data\API.Company.Infraestructure.Data.csproj" />
+    <ProjectReference Include="..\API.Company.Infraestructure.Domain\API.Company.Infraestructure.Domain.csproj" />
+    <ProjectReference Include="..\API.Company.Models\API.Company.Models.csproj" />
   </ItemGroup>
 
 </Project>

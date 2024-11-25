@@ -38,12 +38,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Moinsa.Arcante.Company.Business\API.Company.Business.csproj" />
-    <ProjectReference Include="..\Moinsa.Arcante.Company.Infraestructure.Domain\API.Company.Infraestructure.Domain.csproj" />
-    <ProjectReference Include="..\Moinsa.Arcante.Company.Models\API.Company.Models.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Resources\ApiCompanyResource.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -67,6 +61,13 @@
   <ItemGroup>
     <Folder Include="Mapping\" />
     <Folder Include="Models\Organizaciones\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\API.Company.Business\API.Company.Business.csproj" />
+    <ProjectReference Include="..\API.Company.Infraestructure.Data\API.Company.Infraestructure.Data.csproj" />
+    <ProjectReference Include="..\API.Company.Infraestructure.Domain\API.Company.Infraestructure.Domain.csproj" />
+    <ProjectReference Include="..\API.Company.Models\API.Company.Models.csproj" />
   </ItemGroup>
 
 </Project>
